@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nomeapelido"
+    namespace = "com.example.appcomida"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.nomeapelido"
+        applicationId = "com.example.appcomida"
         minSdk = 27
         targetSdk = 36
         versionCode = 1
@@ -33,12 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-
-    buildFeatures{
-        viewBinding = true
-
-    }
-
 }
 
 dependencies {
