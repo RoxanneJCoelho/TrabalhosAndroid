@@ -19,5 +19,5 @@ class MainActivity : AppCompatActivity() {
             val fahrenheit = celsius * 1.8 + 32
             binding.texto.text = String.format("%.2f graus Celsius é: %.2f graus Fahrenheit", celsius, fahrenheit)
         }
-    }
+}
 }
