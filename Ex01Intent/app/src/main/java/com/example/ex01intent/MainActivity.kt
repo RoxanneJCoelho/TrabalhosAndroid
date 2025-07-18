@@ -15,19 +15,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        var nomeUtilizador = binding.editNome.text.toString()
-        var moradaUtilizador = binding.editMorada.text.toString()
-        var telefoneUtilizador = binding.editTelefone.text.toString().toInt()
-        var emailUtilizador = binding.editEmail.text.toString()
+        binding.button.setOnClickListener {
 
-        var intentTop = Intent(this, MainActivity2::class.java)
+            var nomeUtilizador = binding.editNome.text.toString()
+            var moradaUtilizador = binding.editMorada.text.toString()
+            var telefoneUtilizador = binding.editTelefone.text.toString().toInt()
+            var emailUtilizador = binding.editEmail.text.toString()
 
-        intentTop.putExtra("nome", nomeUtilizador)
-        intentTop.putExtra("morada", moradaUtilizador)
-        intentTop.putExtra("telefone", telefoneUtilizador)
-        intentTop.putExtra("email", emailUtilizador)
+            var intentTop = Intent(this, MainActivity2::class.java)
 
-        startActivity(intentTop)
+            intentTop.putExtra("nome", nomeUtilizador)
+            intentTop.putExtra("morada", moradaUtilizador)
+            intentTop.putExtra("telefone", telefoneUtilizador)
+            intentTop.putExtra("email", emailUtilizador)
 
+            startActivity(intentTop)
+        }
     }
 }
